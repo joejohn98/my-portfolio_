@@ -2,6 +2,7 @@ import Hero from "@/sections/Hero";
 import Projects from "@/sections/Projects";
 
 import Header from "@/components/Header";
+import About from "@/sections/About";
 
 
 export default function Page() {
@@ -11,6 +12,7 @@ export default function Page() {
       <main>
         <Hero />
         <Projects />
+        <About />
       </main>
     </div>
   );
