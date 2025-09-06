@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import About from "@/sections/About";
 import Contact from "@/sections/Contact";
 import EmailJsInit from "@/components/EmailJSInit";
+import Footer from "@/sections/Footer";
 
 export default function Page() {
   return (
@@ -18,6 +19,7 @@ export default function Page() {
           <About />
           <Contact />
         </main>
+        <Footer />
       </div>
     </>
   );
