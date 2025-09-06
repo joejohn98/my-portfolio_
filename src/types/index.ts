@@ -8,6 +8,12 @@ export interface Project {
   imageUrl: string;
 }
 
+export interface ContactFormData {
+  name: string
+  email: string
+  message: string
+}
+
 export interface NavLink {
   label: string;
   href: string;
