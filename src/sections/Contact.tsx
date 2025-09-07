@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
-import { Phone, Mail, Check } from "lucide-react"
-import { motion } from "framer-motion"
-import ContactForm from "@/components/ContactForm"
+import { Phone, Mail, Check } from "lucide-react";
+import { motion } from "framer-motion";
+import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
   const container = {
     hidden: { opacity: 0 },
     show: { opacity: 1, transition: { staggerChildren: 0.1 } },
-  }
-  const item = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }
+  };
+  const item = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } };
 
   return (
     <section id="contact" className="py-16 bg-white dark:bg-[#020817]">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 sm:px-6 md:px-6">
         {/* Section Header */}
         <motion.div
           className="text-center mb-12"
@@ -23,10 +23,12 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Get In <span className="text-blue-600 dark:text-blue-400">Touch</span>
+            Get In{" "}
+            <span className="text-blue-600 dark:text-blue-400">Touch</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Have a project in mind or want to chat? Feel free to reach out to me using the form below.
+            Have a project in mind or want to chat? Feel free to reach out to me
+            using the form below.
           </p>
         </motion.div>
 
@@ -42,7 +44,9 @@ export default function Contact() {
           >
             {/* Contact Information */}
             <motion.div variants={item}>
-              <h3 className="text-xl font-semibold mb-6 text-gray-900 dark:text-white">Contact Information</h3>
+              <h3 className="text-xl font-semibold mb-6 text-gray-900 dark:text-white">
+                Contact Information
+              </h3>
               <div className="space-y-4">
                 <motion.div
                   className="flex items-start"
@@ -51,7 +55,9 @@ export default function Contact() {
                 >
                   <Mail className="h-5 w-5 text-blue-500 mt-1 mr-3" />
                   <div>
-                    <p className="font-medium text-gray-900 dark:text-gray-200">Email</p>
+                    <p className="font-medium text-gray-900 dark:text-gray-200">
+                      Email
+                    </p>
                     <a
                       href="mailto:joejohnkj@gmail.com"
                       className="text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400"
@@ -68,7 +74,9 @@ export default function Contact() {
                 >
                   <Phone className="h-5 w-5 text-blue-500 mt-1 mr-3" />
                   <div>
-                    <p className="font-medium text-gray-900 dark:text-gray-200">Phone</p>
+                    <p className="font-medium text-gray-900 dark:text-gray-200">
+                      Phone
+                    </p>
                     <a
                       href="tel:+917095835845"
                       className="text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400"
@@ -85,7 +93,9 @@ export default function Contact() {
               className="p-6 bg-white dark:bg-[#020817] rounded-lg border dark:border-gray-700 shadow-sm"
               variants={item}
             >
-              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Career Goals</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
+                Career Goals
+              </h3>
               <ul className="space-y-2">
                 <motion.li
                   className="flex items-start"
@@ -108,7 +118,8 @@ export default function Contact() {
                 >
                   <Check className="h-5 w-5 text-blue-500 mt-0.5 mr-2 flex-shrink-0" />
                   <span className="text-gray-700 dark:text-gray-300">
-                    To contribute to meaningful projects that improve people&#39;s lives
+                    To contribute to meaningful projects that improve
+                    people&#39;s lives
                   </span>
                 </motion.li>
                 <motion.li
@@ -120,7 +131,8 @@ export default function Contact() {
                 >
                   <Check className="h-5 w-5 text-blue-500 mt-0.5 mr-2 flex-shrink-0" />
                   <span className="text-gray-700 dark:text-gray-300">
-                    To mentor others and share knowledge within the developer community
+                    To mentor others and share knowledge within the developer
+                    community
                   </span>
                 </motion.li>
               </ul>
@@ -128,7 +140,9 @@ export default function Contact() {
 
             {/* Social Links */}
             <div>
-              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Follow Me</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
+                Follow Me
+              </h3>
               <div className="flex items-center space-x-4">
                 <a
                   href="https://github.com/joejohn98"
@@ -176,12 +190,14 @@ export default function Contact() {
             transition={{ duration: 0.5 }}
           >
             <div className="bg-white dark:bg-[#020817] border border-transparent dark:border-gray-700 rounded-xl p-6 shadow-lg h-full">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Send Me a Message</h3>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                Send Me a Message
+              </h3>
               <ContactForm />
             </div>
           </motion.div>
         </div>
       </div>
     </section>
-  )
+  );
 }

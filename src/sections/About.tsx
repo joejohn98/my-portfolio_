@@ -1,9 +1,9 @@
-import { Code, Globe, Lightbulb, Layers } from "lucide-react"
+import { Code, Globe, Lightbulb, Layers } from "lucide-react";
 
 const About = () => {
   return (
     <section id="about" className="py-16">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 sm:px-6 md:px-6">
         <div className="text-center mb-12 animate-slide-up">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             About <span className="text-blue-600 dark:text-blue-400">Me</span>

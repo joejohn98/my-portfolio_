@@ -53,7 +53,7 @@ const Header = () => {
         damping: 15,
       }}
     >
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 sm:px-6 md:px-6">
         <div className="flex justify-between items-center">
           <motion.h1
             className="text-2xl md:text-3xl text-blue-600 dark:text-blue-400 m-0 font-bold"

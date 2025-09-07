@@ -11,7 +11,7 @@ export default function HeroClient({ skills }: HeroClientProps) {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col justify-center relative py-20 px-6 md:px-12 lg:px-24"
+      className="min-h-screen flex flex-col justify-center relative py-20 px-4 sm:px-6 md:px-12 lg:px-24"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl animate-fade-in">
