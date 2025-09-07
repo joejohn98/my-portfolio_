@@ -50,7 +50,7 @@ export default function HeroClient({ skills }: HeroClientProps) {
             <Button
               variant="outline"
               onClick={() =>
-                window.open("/assets/JoeJohn_frontend_developer.pdf", "_blank")
+                window.open("/JoeJohn_frontend_developer.pdf", "_blank")
               }
               className="gap-1"
             >
