@@ -1,7 +1,6 @@
-import { Code, Globe, Lightbulb, Layers } from "lucide-react";
-import { NextPage } from "next";
+import { Code, Globe, Lightbulb, Layers } from "lucide-react"
 
-const About: NextPage = () => {
+const About = () => {
   return (
     <section id="about" className="py-16">
       <div className="container mx-auto px-4 md:px-6">

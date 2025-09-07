@@ -6,7 +6,6 @@ import { Menu, X, Moon, Sun } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
 import type { NavLink } from "../types";
 import { motion, AnimatePresence } from "framer-motion";
-import { NextPage } from "next";
 
 const navLinks: NavLink[] = [
   { label: "Home", href: "#home" },
@@ -15,7 +14,7 @@ const navLinks: NavLink[] = [
   { label: "Contact", href: "#contact" },
 ];
 
-const Header: NextPage = () => {
+const Header = () => {
   const { theme, toggleTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);

@@ -63,9 +63,12 @@ export const useContactForm = () => {
       setIsSubmitting(true);
 
       try {
+        if (!EMAILJS_CONFIG.SERVICE_ID || !EMAILJS_CONFIG.TEMPLATE_ID) {
+          throw new Error("EmailJS configuration is missing SERVICE_ID or TEMPLATE_ID.");
+        }
         const response = await emailjs.send(
-          EMAILJS_CONFIG.SERVICE_ID,
-          EMAILJS_CONFIG.TEMPLATE_ID,
+          EMAILJS_CONFIG.SERVICE_ID as string,
+          EMAILJS_CONFIG.TEMPLATE_ID as string,
           {
             name: formData.name,
             email: formData.email,
