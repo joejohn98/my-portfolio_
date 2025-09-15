@@ -53,7 +53,7 @@ const About = () => {
                   Frontend Development
                 </h4>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  Proficient in React, TypeScript, JavaScript, HTML, CSS, and
+                  Proficient in Next.js, React, TypeScript, JavaScript, HTML, CSS, and
                   Tailwind CSS.
                 </p>
               </div>
